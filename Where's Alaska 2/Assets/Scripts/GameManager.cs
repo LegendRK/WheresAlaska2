@@ -32,6 +32,6 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        timer.transform.localScale = new Vector3(timer.transform.localScale.x - rateOfDepletion, transform.localScale.y / 2, transform.localScale.z);
+        timer.transform.localScale = new Vector3(timer.transform.localScale.x - rateOfDepletion, timer.transform.localScale.y, timer.transform.localScale.z);
 	}
 }

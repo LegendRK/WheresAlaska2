@@ -8,7 +8,7 @@ public class TextureManager : MonoBehaviour {
     private Sprite alaskaTexture;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         Sprite[] tempSprites = Resources.LoadAll<Sprite>("states_spritesheet");
         Debug.Log(tempSprites.Length);
         textures = new List<Sprite>(tempSprites);
