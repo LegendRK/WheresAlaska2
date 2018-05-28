@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class TimerScript : MonoBehaviour {
 
-    [SerializeField]
-    private float time;
-
 	// Use this for initialization
 	void Start ()
     {
