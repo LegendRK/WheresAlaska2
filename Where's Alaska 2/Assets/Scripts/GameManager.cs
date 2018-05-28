@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     // variables
     public GameObject timer;
+    public LevelManager levelManager;
     public float width;
     public float originalScale;
 
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
         width = timer.GetComponent<SpriteRenderer>().bounds.size.x;
         originalScale = timer.transform.localScale.x;
         rateOfDepletion = Time.deltaTime * (originalScale / time);
+        levelManager = this.GetComponent<LevelManager>();
     }
 	
 	// Update is called once per frame
